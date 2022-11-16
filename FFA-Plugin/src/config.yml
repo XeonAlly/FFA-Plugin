@@ -1,0 +1,49 @@
+scoreboard:
+  domain: 'www.domain.com'
+
+game:
+  event: 'EVENT_NONE'
+  event-reward: 0
+
+world:
+  blockPlace-MaxY: 30
+  arenaY: 60
+  location:
+    spawn:
+      world: world
+      x: 0
+      y: 61
+      z: 0
+      yaw: 0
+      pitch: 0
+  kits:
+    item-1:
+      type: IRON_SWORD
+      amount: 1
+      enchanted: false # enchant a sharpness 1
+    item-2:
+      type: IRON_HELMET
+      amount: 1
+      enchanted: false # enchant a protection 1
+    item-3:
+      type: IRON_CHESTPLATE
+      amount: 1
+      enchanted: false # enchant a protection 1
+    item-4:
+      type: IRON_LEGGINGS
+      amount: 1
+      enchanted: false # enchant a protection 1
+    item-5:
+      type: IRON_BOOTS
+      amount: 1
+      enchanted: false # enchant a protection 1
+
+levelup:
+  message: true
+  sound:
+    enabled: true
+    type: LEVEL_UP
+
+chat:
+  enabled: true
+  format: '%LEVEL% &r%PREFIX% &r&f%PLAYER-NAME%&f: %MESSAGE%'
